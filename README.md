@@ -1,2 +1,1 @@
-# ts-react-webpack
-react16 babel7 typescript webpack4 
+# trouble_shoot_front
