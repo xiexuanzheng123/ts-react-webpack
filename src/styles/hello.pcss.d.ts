@@ -5,5 +5,5 @@
 
 // export const locals: IHelloPcss;
 
-export const h1Style;
-export const span;
+export const h1Style: string;
+export const span: string;

@@ -1,15 +1,15 @@
 import * as React from 'react';
 
 export interface ICounterProps {
-  startsFrom : number
+  startsFrom: number
 }
 
 interface ICounterState {
-  counter : number
-};
+  counter: number
+}
 
 export class Counter extends React.Component <ICounterProps, ICounterState> {
-  constructor(props : ICounterProps) {
+  constructor(props: ICounterProps) {
     super(props);
 
     this.state = { counter: props.startsFrom };
@@ -19,7 +19,7 @@ export class Counter extends React.Component <ICounterProps, ICounterState> {
     this.setState(this.increment);
   }
 
-  increment(state : ICounterState) {
+  increment(state: ICounterState) {
     return { ...state, counter: state.counter + 1};
   }
 

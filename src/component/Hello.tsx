@@ -7,15 +7,14 @@ const helloStyle = {
 };
 
 export interface IHelloProps {
-  compiler : string;
-  framework : string;
+  compiler: string;
+  framework: string;
 }
 
-export const Hello = (props : IHelloProps) => {
-  const counterProps : ICounterProps = {
+export const Hello = (props: IHelloProps) => {
+  const counterProps: ICounterProps = {
     startsFrom: 3
   };
-
   return (
     <section>
       <h1 className={style.h1Style}  style={helloStyle}>
@@ -25,4 +24,4 @@ export const Hello = (props : IHelloProps) => {
       <Counter {...counterProps} />
     </section>
   );
-}
+};
