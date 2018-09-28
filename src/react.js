@@ -20,5 +20,12 @@
  * start的时候会出来@types/node/index.d.ts中找不到Set的情况，改用tsloader就可以了
  * 
  * "no-parameter-properties": false,禁止给类的构造函数的参数添加修饰符
+ * 
+ * Mobx对Typescript完美支持
+ * Mobx更加灵活简洁，效率更高
  *  
+ * typings-for-css-modules-loader 这个插件去自动帮我从 CSS 文件提取生成一个 d.ts 文件
+ * 
+ * awesome-typescript-loader可以让webpack使用typescript的标准文件tsconfig.json编译typescript代码。
+ * source-map-loader使用typescript输出的sourcemap文件来告诉webpack何时生成自己的sourcemap
  */

@@ -1,8 +1,8 @@
 import * as React from 'react';
-import * as ReactDom from 'react-dom';
-import Hello from './component/RT/Hello';
+import * as ReactDOM from 'react-dom';
+import { Helloo } from './components/Helloo';
 
-ReactDom.render(
-    <Hello name="TypeScript" enthusiasmLevel={2} />,
-    document.getElementById('app') as HTMLElement  // 类型断言
+ReactDOM.render(
+    <Helloo compiler="TypeScript" framework="React" />,
+    document.getElementById('app')
 );

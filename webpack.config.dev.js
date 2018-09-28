@@ -9,7 +9,7 @@ module.exports = {
         index: [
             '@babel/polyfill',
             'webpack-hot-middleware/client?reload=true', 
-            './src/index.tsx'
+            './src/index'
         ]
     },
     target: 'web', 
@@ -40,7 +40,14 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(js|sx)?$/,
+                test: /\.jsx$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader'
+                }
+            },
+            {
+                test: /\.js$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader'
@@ -50,7 +57,10 @@ module.exports = {
                 test: /\.tsx$/,
                 exclude: /node_modules/,
                 use: {
-                    loader: 'ts-loader'
+                    loader: 'ts-loader',
+                    options: {
+                        transpileOnly: true //防止每次编译都去检查所有的ts文件
+                    }
                 }
             },
             {
