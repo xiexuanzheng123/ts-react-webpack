@@ -99,7 +99,7 @@ interface ClockConstructor {
 interface ClockInterface {
     tick(): any;
 }
-class Clock1 implements ClockConstructor {//当一个类实现了一个接口时，只对其实例部分进行类型检查
-    currentTime: Date;
-    constructor(h: number, m: number);//constructor存在于类的静态部分，所以不在检查范围
-}
+// class Clock1 implements ClockConstructor {//当一个类实现了一个接口时，只对其实例部分进行类型检查
+//     currentTime: Date;
+//     constructor(h: number, m: number);//constructor存在于类的静态部分，所以不在检查范围
+// }
