@@ -1,7 +1,12 @@
 class Animall {
-    public name: string;
-    public constructor(theName: string) {
-        this.name = theName;
+    // public name: string;
+    // public constructor(theName: string) {
+    //     this.name = theName;
+    // }
+    constructor(private name: string) {
+        //仅在constructor使用private参数来创建和初始化。
+        //把声明和赋值合并在一起，参数属性通过给构造函数参数添加一个限定符来声明
+        //使用private限定一个参数属性会声明并初始化一个私有成员，对于public和protected一样
     }
     public move(distanceInMeters: number = 0) {
         console.log(`${this.name} moved ${distanceInMeters}m.`);
